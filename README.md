@@ -55,8 +55,13 @@ pm2 start ecosystem.config.cjs   # serves wrangler pages dev on :3000
 curl http://localhost:3000/api/health
 ```
 
+## URLs
+- **Production**: https://sparkmind-foundry.pages.dev
+- **GitHub**: https://github.com/ganihypha/Sparkmind-Sovereign-Agent-Foundry
+
 ## Deployment
 - **Platform**: Cloudflare Pages
-- **Status**: ⏳ Pending production deploy (build verified locally)
+- **Status**: ✅ Active (live in production)
 - **Production project name**: `sparkmind-foundry`
+- **Production branch**: `main`
 - **Last Updated**: 2026-05-31
