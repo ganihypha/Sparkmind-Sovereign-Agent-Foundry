@@ -3,7 +3,8 @@
 ## Project Overview
 - **Name**: SparkMind Sovereign Agent Foundry
 - **Goal**: Mother-brand landing + live Sprint tracker + Revenue ledger untuk "Indonesia's First Sovereign Agent Foundry". Memvisualisasikan Doctrine v11.0 (Triple Parallel: Doctrine v11.0 + Architect v6.0 + Sprint-Execute v1.0).
-- **Owner**: Reza Estes / Haidar — Sovereign AI Dev
+- **Owner**: **Haidar Faras Muhadidzib** (Sole Founder — "Reza Estes" hanya alias/pen-name) — Sovereign AI Dev
+- **Master SSOT**: [`docs/SPARKMIND-WEB-ID-CANONICAL-SSOT.md`](docs/SPARKMIND-WEB-ID-CANONICAL-SSOT.md) ⭐ — peresmian, legalisasi, monetisasi, pricing, strategi & legacy sparkmind.web.id
 - **Doctrine date**: 2026-05-31 · Status: CANONICAL · EXECUTE-READY · BRUTAL-VERIFIED · HARDENED
 - **Tagline**: "Forge sovereign agents. Own your edge." / "Tempa agen sendiri. Kuasai edge lo sendiri."
 
