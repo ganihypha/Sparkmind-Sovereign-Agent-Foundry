@@ -71,9 +71,9 @@ export const BRANDS: Brand[] = [
   },
   {
     key: 'barberkas', name: 'BarberKas', subdomain: 'barberkas.sparkmind.web.id',
-    tagline: 'POS agent untuk barbershop — antrian, booking & payment via WhatsApp.',
-    focus: 'Cash Flow · Revived Sprint 2', pricing: 'Rp 50K – 100K',
-    status: 'REVIVING', icon: 'fa-scissors', accent: '#3b82f6'
+    tagline: 'Kasir + booking + AI Staff untuk barbershop — dibuat oleh capster, untuk capster.',
+    focus: 'Capster Commit · Owner Dogfood', pricing: 'Rp 49K – 499K/bln',
+    status: 'LIVE', icon: 'fa-scissors', accent: '#3b82f6'
   },
   {
     key: 'pacelokal', name: 'PACE Lokal', subdomain: 'pacelokal.sparkmind.web.id',
@@ -254,6 +254,61 @@ export const LEGAL = {
   ],
   effectiveDate: '1 Desember 2025',
   lastUpdated: '3 Juli 2026'
+}
+
+// ──────────────────────────────────────────────────────────────
+// BARBERKAS — Capster Commit Sub-Brand Hub
+// SSOT: docs/BARBERKAS-CAPSTER-COMMIT-SSOT.md v1.0 (2026-07-03)
+// Owner-as-Capster monetization lock · dual-domain live
+// ──────────────────────────────────────────────────────────────
+export const BARBERKAS = {
+  name: 'BarberKas',
+  parent: 'sparkmind.web.id',
+  ssot: 'BARBERKAS-CAPSTER-COMMIT-SSOT v1.0',
+  doctrineDate: '2026-07-03',
+  commitment: 'Owner (Haidar Faras Muhadidzib) berkomitmen aktif sebagai CAPSTER — BarberKas dipakai sendiri setiap hari kerja sebelum dijual ke capster lain.',
+  oneLiner: 'BarberKas bukan software yang dijual KE barbershop, tapi sistem yang LAHIR DARI barbershop milik capster-nya sendiri.',
+  domains: [
+    { url: 'barberkas.sparkmind.web.id', role: 'Brand home kanonik — identitas, legal, tenant apps', status: 'LIVE' },
+    { url: 'barberkas-foundry.biz.id', role: 'Outcome SKU landing — tangga harga & intake WhatsApp', status: 'LIVE' },
+    { url: 'alfacut.barberkas.sparkmind.web.id', role: 'Tenant demo — transaksi pertama tercatat (Truth-Lock proof)', status: 'LIVE' }
+  ],
+  advantages: [
+    { title: 'Zero riset pasar', desc: 'Owner ADALAH target market — tahu persis pain capster.', icon: 'fa-bullseye' },
+    { title: 'Demo hidup tiap hari', desc: 'Kursi barber = showroom BarberKas berjalan.', icon: 'fa-chair' },
+    { title: 'Trust ganda', desc: '"Dibuat oleh capster, untuk capster" — bukan founder tech asing.', icon: 'fa-handshake' },
+    { title: 'Feedback loop 0 hari', desc: 'Bug ketemu pagi → fix sore → dipakai besok.', icon: 'fa-rotate' },
+    { title: 'Distribusi gratis', desc: 'Customer potong rambut = prospek melihat sistem bekerja.', icon: 'fa-people-arrows' },
+    { title: 'Konten tak habis', desc: 'Aktivitas harian capster = konten build-in-public organik.', icon: 'fa-camera' }
+  ],
+  ladder: [
+    { tier: 'Edukasi', price: 'Gratis', desc: 'Demo dashboard + lihat AI Staff bekerja, tanpa kartu.', status: 'LIVE' },
+    { tier: 'Setup (Land)', price: 'Rp 49–99K/bln', desc: 'Kasir + booking LIVE + struk WhatsApp.', status: 'LIVE' },
+    { tier: 'AI Staff (Retain)', price: 'Rp 149–499K/bln', desc: 'Resepsionis + Marketing + Insight Stylist.', status: 'LIVE' },
+    { tier: 'Chain (Expand)', price: 'High-ticket', desc: 'Multi-outlet ops + cross-shop benchmark.', status: 'ROADMAP' },
+    { tier: 'Flagship one-time', price: 'Rp 199K', desc: 'kasir-booking done-for-you — "Booking manual? Otomatis dalam 3 hari."', status: 'LOCKED' }
+  ],
+  aiStaff: [
+    { name: 'Resepsionis', desc: 'Balas WA customer → booking otomatis masuk.', icon: 'fa-calendar-check', status: 'LIVE' },
+    { name: 'Marketing', desc: 'Caption IG/TikTok + hashtag siap posting.', icon: 'fa-camera-retro', status: 'LIVE' },
+    { name: 'Insight Stylist', desc: 'Rekomendasi cut dari history customer.', icon: 'fa-scissors', status: 'LIVE' },
+    { name: 'CRM', desc: 'Loyalty + re-engage customer.', icon: 'fa-heart', status: 'ROADMAP' },
+    { name: 'Admin/Ops', desc: 'Pricing, inventory, analitik capster.', icon: 'fa-chart-line', status: 'ROADMAP' },
+    { name: 'Cross-shop Ops', desc: 'Benchmark multi-outlet (chain).', icon: 'fa-building', status: 'HIGH-TICKET' }
+  ],
+  flywheel: [
+    'Potong rambut (cash harian)',
+    'Pakai BarberKas sendiri (proof)',
+    'Posting build-in-public (reach)',
+    'Capster lain tanya (leads)',
+    'Closing Setup Rp 49–99K/bln (MRR)',
+    'Naik tier AI Staff (expand) → ulang'
+  ],
+  phases: [
+    { phase: 'PROOF', days: '1–21', target: 'Owner aktif capster + BarberKas dipakai harian + 10 konten before/after' },
+    { phase: 'TRACTION', days: '22–60', target: '10 capster/barbershop lain onboard tier Setup' },
+    { phase: 'SCALE', days: '61–90', target: '100 pembeli ekosistem + 1 partner reseller + pilot Chain' }
+  ]
 }
 
 // Helper: current sprint day index relative to today (clamped 0..14)

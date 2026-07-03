@@ -26,6 +26,7 @@ export const Nav = (props: { active: string }) => (
       <a href="/doctrine" class={props.active === 'doctrine' ? 'active' : ''}>Doctrine</a>
       <a href="/sprint" class={props.active === 'sprint' ? 'active' : ''}>Sprint</a>
       <a href="/revenue" class={props.active === 'revenue' ? 'active' : ''}>Revenue</a>
+      <a href="/barberkas" class={props.active === 'barberkas' ? 'active' : ''}>BarberKas</a>
       <a href="/legal" class={props.active === 'legal' ? 'active' : ''}>Legal</a>
     </nav>
   </header>
@@ -48,6 +49,7 @@ export const Footer = () => (
         <a href="/doctrine">Doctrine {META.doctrineVersion}</a>
         <a href="/sprint">Sprint Tracker</a>
         <a href="/revenue">Revenue Ledger</a>
+        <a href="/barberkas">BarberKas Hub</a>
       </div>
       <div>
         <h4>Legal</h4>

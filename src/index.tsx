@@ -6,7 +6,7 @@ import { Nav, Footer, statusBadge } from './components'
 import legal from './legal'
 import {
   META, PILLARS, BRANDS, SPRINT, REVENUE, D90_MIX, TARGETS,
-  DECISIONS, GAPS, GAP_STATS, MARKET, LEGAL, currentSprintDay, rupiah
+  DECISIONS, GAPS, GAP_STATS, MARKET, LEGAL, BARBERKAS, currentSprintDay, rupiah
 } from './data'
 
 const app = new Hono()
@@ -42,6 +42,7 @@ app.get('/api/state', (c) => {
 })
 
 app.get('/api/brands', (c) => c.json(BRANDS))
+app.get('/api/barberkas', (c) => c.json(BARBERKAS))
 app.get('/api/sprint', (c) => c.json({ today: currentSprintDay(), days: SPRINT }))
 app.get('/api/revenue', (c) => c.json({ targetIdr: META.revenueD30Target, channels: REVENUE, mix: D90_MIX, targets: TARGETS }))
 
@@ -302,6 +303,128 @@ app.get('/revenue', (c) => {
                 <div class="mix-bar"><div class="mix-fill" style={`width:${m.pct}%`}></div><span class="mix-pct">{m.pct}%</span></div>
               </div>
             ))}
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </Layout>
+  )
+})
+
+// ════════════════════════════════════════════════════════════════
+// BARBERKAS Hub — Capster Commit Sub-Brand
+// SSOT: docs/BARBERKAS-CAPSTER-COMMIT-SSOT.md v1.0
+// ════════════════════════════════════════════════════════════════
+const bkBadge = (s: string) => {
+  const cls = s === 'LIVE' ? 'b-green' : s === 'ROADMAP' ? 'b-amber' : s === 'LOCKED' ? 'b-blue' : 'b-red'
+  return <span class={`badge ${cls}`}>{s}</span>
+}
+
+app.get('/barberkas', (c) => {
+  return c.html(
+    <Layout title={`BarberKas — Capster Commit Hub · ${META.name}`}>
+      <Nav active="barberkas" />
+      <main class="page">
+        <section class="page-head" id="barberkas-hero">
+          <span class="kicker"><i class="fas fa-scissors"></i> SUB-BRAND · {BARBERKAS.ssot}</span>
+          <h1>BarberKas — Capster Commit Hub</h1>
+          <p class="muted">{BARBERKAS.oneLiner}</p>
+        </section>
+
+        <section class="card highlight-card" id="commitment-card">
+          <h2><i class="fas fa-lock"></i> Deklarasi Komitmen (Commitment Lock)</h2>
+          <p>{BARBERKAS.commitment}</p>
+          <p class="muted small">
+            Payung hukum: <b>{LEGAL.companyName}</b> · {LEGAL.registrationNo} ·
+            Rel uang: Oasis BI Pro (MoR) → PJP Duitku {META.duitku} → QRIS/VA
+          </p>
+        </section>
+
+        <section class="card" id="dual-domain-section">
+          <h2><i class="fas fa-globe"></i> Arsitektur Dual-Domain (LIVE)</h2>
+          <table class="data-table">
+            <thead><tr><th>Domain</th><th>Peran</th><th>Status</th></tr></thead>
+            <tbody>
+              {BARBERKAS.domains.map((d) => (
+                <tr>
+                  <td><code>{d.url}</code></td>
+                  <td>{d.role}</td>
+                  <td>{bkBadge(d.status)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section" id="advantages-section">
+          <div class="section-head">
+            <h2>Unfair Advantage: Owner-as-Capster</h2>
+            <p class="muted">Owner = Capster = Kustomer-0 · Eat your own dog food</p>
+          </div>
+          <div class="brand-grid">
+            {BARBERKAS.advantages.map((a) => (
+              <article class="brand-card" style="--accent:#3b82f6">
+                <div class="brand-top"><i class={`fas ${a.icon}`}></i></div>
+                <h3>{a.title}</h3>
+                <p class="brand-tag">{a.desc}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section class="card" id="ladder-section">
+          <h2><i class="fas fa-stairs"></i> Tangga Monetisasi (Land → Retain → Expand)</h2>
+          <table class="data-table">
+            <thead><tr><th>Tier</th><th>Harga</th><th>Isi</th><th>Status</th></tr></thead>
+            <tbody>
+              {BARBERKAS.ladder.map((l) => (
+                <tr>
+                  <td><b>{l.tier}</b></td>
+                  <td class="num">{l.price}</td>
+                  <td>{l.desc}</td>
+                  <td>{bkBadge(l.status)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+
+        <section class="section" id="ai-staff-section">
+          <div class="section-head">
+            <h2>AI Staff Roster (Truth-Lock)</h2>
+            <p class="muted">3/9 live — sisanya intro bertahap, jujur, no overpromise</p>
+          </div>
+          <div class="brand-grid">
+            {BARBERKAS.aiStaff.map((s) => (
+              <article class="brand-card" style="--accent:#3b82f6">
+                <div class="brand-top"><i class={`fas ${s.icon}`}></i>{bkBadge(s.status)}</div>
+                <h3>{s.name}</h3>
+                <p class="brand-tag">{s.desc}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section class="card" id="flywheel-section">
+          <h2><i class="fas fa-arrows-spin"></i> Flywheel Capster → Produk</h2>
+          <ol class="bullets">
+            {BARBERKAS.flywheel.map((f) => (<li>{f}</li>))}
+          </ol>
+        </section>
+
+        <section class="card" id="phases-section">
+          <h2><i class="fas fa-flag-checkered"></i> Target 90 Hari (PROOF → TRACTION → SCALE)</h2>
+          <table class="data-table">
+            <thead><tr><th>Fase</th><th>Hari</th><th>Target Capster-Commit</th></tr></thead>
+            <tbody>
+              {BARBERKAS.phases.map((p) => (
+                <tr><td><b>{p.phase}</b></td><td>{p.days}</td><td>{p.target}</td></tr>
+              ))}
+            </tbody>
+          </table>
+          <div class="hero-cta" style="margin-top:1.2rem">
+            <a href="https://barberkas.sparkmind.web.id" class="btn btn-gold" target="_blank" rel="noopener"><i class="fas fa-scissors"></i> Buka BarberKas</a>
+            <a href="https://barberkas-foundry.biz.id" class="btn btn-ghost" target="_blank" rel="noopener"><i class="fas fa-rocket"></i> Outcome SKU Landing</a>
           </div>
         </section>
       </main>
