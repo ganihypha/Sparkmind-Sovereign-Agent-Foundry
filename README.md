@@ -77,4 +77,4 @@ curl http://localhost:3000/api/health
 - **Status**: ✅ Active (live in production)
 - **Production project name**: `sparkmind-foundry`
 - **Production branch**: `main`
-- **Last Updated**: 2026-05-31
+- **Last Updated**: 2026-07-03 (SSOT 100% consolidated + redeploy CF BYOK)
