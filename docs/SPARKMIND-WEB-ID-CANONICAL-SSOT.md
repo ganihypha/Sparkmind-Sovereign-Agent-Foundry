@@ -4,9 +4,14 @@
 
 ## Peresmian, Legalisasi, Monetisasi, Pricing, Strategi & Legacy untuk sparkmind.web.id
 
+> 🔗 **ALIGNED · SPARKMIND.WEB.ID BRAND CANON** — Dokumen ini adalah Master Canon
+> (Peringkat 1) bersama `BRAND-ALIGNMENT-LOCK.md`. Owner: **Haidar Faras Muhadidzib**
+> (alias: Reza Estes) · Badan hukum: **PT WASKITA CAKRAWARTI DIGITAL**
+> (`AHU-066746.AH.01.30.Tahun 2025`) · Rumah utama: **sparkmind.web.id** 🥇 #1 Google.
+
 **Codename**: `SPARKMIND-WEB-ID-CANONICAL-SSOT`
-**Doctrine Date**: 2026-07-02
-**Versi**: v1.0 — CANONICAL MASTER DOC
+**Doctrine Date**: 2026-07-03
+**Versi**: v2.0 — CANONICAL MASTER DOC (PT ENTITY LOCK UPGRADE)
 **Domain kanonik**: `sparkmind.web.id` (🥇 Peringkat #1 Google — Exact Match Entity)
 **Jurisdiction**: 🇮🇩 Indonesia (PANDI .web.id · PSE Kominfo · UU PDP · BI/PJP via Duitku)
 **Status**: 🔒 CANONICAL · EXECUTE-READY · PUBLIC-SAFE
@@ -24,9 +29,12 @@
 | **Pemilik resmi & sah** | **Haidar Faras Muhadidzib** |
 | **Nama panggilan resmi** | Haidar / Haidar Faras |
 | **Alias / pen-name** | "Reza Estes" — **HANYA nama pena/alias**, BUKAN entitas hukum terpisah |
-| **Peran** | Sole Founder · Sovereign AI Dev · Sole Beneficial Owner 100% |
+| **Peran** | Sole Founder · Direktur · Sovereign AI Dev · Sole Beneficial Owner 100% |
+| **Badan hukum resmi** | **PT WASKITA CAKRAWARTI DIGITAL** — Perseroan Perorangan (untuk Usaha Mikro dan Kecil) |
+| **Nomor pendaftaran** | `AHU-066746.AH.01.30.Tahun 2025` — Kementerian Hukum RI, Ditjen AHU (terbit 1 Desember 2025) |
+| **Kedudukan badan hukum** | Kabupaten Banyumas, Jawa Tengah, Indonesia |
 | **Aset utama** | Domain `sparkmind.web.id` (terdaftar atas nama pemilik, verifikasi KTP via PANDI) |
-| **Delegasi** | **TIDAK ADA** — founder tunggal, kendali penuh, tanpa co-founder |
+| **Delegasi** | **TIDAK ADA** — founder tunggal, pemegang saham tunggal, kendali penuh, tanpa co-founder |
 
 **Klarifikasi kanonik (menimpa semua dokumen lama):**
 1. Setiap penyebutan "Reza Estes / Haidar" di dokumen SSOT lama harus dibaca sebagai
@@ -35,6 +43,12 @@
    nama yang dipakai adalah **nama asli sesuai data diri: Haidar Faras Muhadidzib**.
 3. Untuk **branding publik**, boleh memakai "Haidar Faras" atau narasi
    *sole founder / indie hacker* tanpa wajah (faceless) — keduanya sah.
+4. **UPGRADE v2.0**: Badan hukum **PT WASKITA CAKRAWARTI DIGITAL sudah resmi berdiri**
+   sejak 1 Desember 2025. Semua penyebutan "belum perlu PT" / "FASE B nanti" di dokumen
+   lama sudah KEDALUWARSA — ekosistem SparkMind kini beroperasi di bawah payung badan
+   hukum resmi ini. Halaman legal publik: `sparkmind.web.id/legal` (+ `/api/legal`).
+5. Skema kepemilikan lama "spousal 50/50" di dokumen batch lama **DICABUT** —
+   kepemilikan mengikuti akta PT: pemegang saham tunggal Haidar Faras Muhadidzib.
 
 ═══════════════════════════════════════════════════════════════════════════════
 
@@ -125,25 +139,27 @@ platform interaktif Indonesia yang berevolusi dari platform belajar → menjadi
 | Domain sparkmind.web.id | ✅ Terdaftar (verifikasi KTP PANDI) | Perpanjang multi-tahun + domain lock | P0 |
 | HTTPS / SSL | ✅ Aktif (Cloudflare) | Always-Use-HTTPS locked | P0 |
 | Google Search Console | ✅ Ter-sinkron | Rapikan meta description resmi | P1 |
-| **NPWP pribadi (Haidar)** | ⏳ verifikasi | Wajib sebelum omzet mengalir — dasar pajak UMKM 0,5% (PPh Final PP 55/2022) | **P0** |
+| **Badan hukum PT Perorangan** | ✅ **BERDIRI** — PT WASKITA CAKRAWARTI DIGITAL, `AHU-066746.AH.01.30.Tahun 2025` (1 Des 2025) | Jaga kepatuhan laporan tahunan AHU + pembukuan | **P0** |
+| **Halaman legal publik** | ✅ LIVE — `/legal` (ownership/terms/privacy/refund/disclaimer) + `/api/legal` | Review berkala tiap update kebijakan | P1 |
+| **NPWP (pribadi + badan)** | ⏳ verifikasi | Wajib sebelum omzet mengalir — dasar pajak UMKM 0,5% (PPh Final PP 55/2022) | **P0** |
 | **PSE Kominfo (umbrella OBP)** | 📋 rencana | Daftar OSS → PSE domestik privat; semua subdomain di bawah 1 payung | P1 |
 | Rekening bank terpisah | 📋 rencana | 1 rekening khusus settlement OBP (pisahkan dari pribadi) | P0 |
 | Duitku production (PJP BI) | ✅ merchant code aktif | Jaga kepatuhan; HMAC-SHA256 signature | P0 |
 | DPO (UU PDP) | ✅ self-appointed | Haidar = DPO; DPIA sederhana terdokumentasi | P1 |
 | Badan usaha (opsional) | 📋 nanti | Mulai sbg perorangan; upgrade ke PT Perorangan saat omzet > Rp 500 jt/thn | P2 |
 
-### 3.2 Jalur legalisasi bertahap (tidak perlu PT dulu!)
+### 3.2 Jalur legalisasi bertahap — STATUS UPGRADE v2.0 ✅
 
-**FASE A — Perorangan Resmi (SEKARANG, biaya ~Rp 0):**
-- Jualan sebagai **usaha perorangan** atas nama Haidar Faras Muhadidzib = 100% legal.
-- NPWP pribadi + pencatatan omzet → PPh Final UMKM 0,5% dari omzet (s/d Rp 4,8 M/thn).
-- Duitku (PJP terdaftar BI) = pihak yang memproses uang → kita bukan PJP → tidak butuh izin BI/OJK.
-- Disclosure MoR di checkout = kepatuhan + trust.
+**FASE A — Perorangan Resmi: ✅ SELESAI (superseded oleh Fase B).**
 
-**FASE B — PT Perorangan (saat omzet stabil > Rp 10 jt/bln):**
-- Biaya pendirian murah (~Rp 50–300rb via AHU online), 1 orang cukup (cocok sole founder).
-- Nama: **"PT SparkMind Foundry Indonesia"** (atau serupa) — pemegang saham tunggal: Haidar.
-- Manfaat: pemisahan harta, kontrak B2B lebih kuat, akses merchant business-grade.
+**FASE B — PT Perorangan: ✅ RESMI BERDIRI (1 Desember 2025).**
+- Badan hukum: **PT WASKITA CAKRAWARTI DIGITAL** — Perseroan Perorangan (UMK).
+- Sertifikat: `AHU-066746.AH.01.30.Tahun 2025` — Kementerian Hukum RI, Ditjen AHU.
+- Kedudukan: Kabupaten Banyumas, Jawa Tengah.
+- Pemegang saham tunggal + Direktur: **Haidar Faras Muhadidzib**.
+- Manfaat aktif: pemisahan harta, kontrak B2B lebih kuat, akses merchant business-grade.
+- Kewajiban rutin: laporan keuangan tahunan ke Menteri (AHU online), pembukuan tertib,
+  pajak badan/UMKM sesuai omzet.
 
 **FASE C — Merek terdaftar DJKI (paralel, saat kas mengizinkan):**
 - Daftarkan merek **"SparkMind"** kelas 41 (edukasi) + 42 (software/SaaS) di DJKI (~Rp 500rb–1,8jt/kelas).
@@ -339,8 +355,8 @@ BarberKas / `kasir-booking` Rp 199.000. Satu mesin, banyak wajah niche.
 1. **Pemilik resmi tunggal = Haidar Faras Muhadidzib** ("Reza Estes" hanya alias).
 2. **sparkmind.web.id = rumah utama** House of Brands; posisi #1 Google dijaga mati-matian
    (§01 aturan emas). Nama & domain TIDAK diganti.
-3. **Legalisasi bertahap**: perorangan resmi (NPWP + PPh Final 0,5%) → PT Perorangan →
-   merek DJKI. Tidak perlu PT untuk mulai jualan.
+3. **Legalisasi**: ✅ PT Perorangan **PT WASKITA CAKRAWARTI DIGITAL** sudah berdiri
+   (`AHU-066746.AH.01.30.Tahun 2025`) → lanjut NPWP + merek DJKI.
 4. **Monetisasi Value-First hibrida**: free tier tetap ada; premium/outcome/subscription/
    high-ticket via LTV ladder (§04.3).
 5. **Pricing kanonik = kode** (`src/data/offers.ts`); flagship = `kasir-booking` Rp 199k.
@@ -353,8 +369,9 @@ BarberKas / `kasir-booking` Rp 199.000. Satu mesin, banyak wajah niche.
 
 ═══════════════════════════════════════════════════════════════════════════════
 
-**END OF SPARKMIND-WEB-ID-CANONICAL-SSOT**
+**END OF SPARKMIND-WEB-ID-CANONICAL-SSOT v2.0**
 
-*Doctrine date: 2026-07-02 · Owner: **Haidar Faras Muhadidzib** (Sole Founder) ·
-Status: 🔒 CANONICAL · EXECUTE-READY · PUBLIC-SAFE ·
+*Doctrine date: 2026-07-03 · Owner: **Haidar Faras Muhadidzib** (Sole Founder) ·
+Badan hukum: **PT WASKITA CAKRAWARTI DIGITAL** (`AHU-066746.AH.01.30.Tahun 2025`) ·
+Status: 🔒 CANONICAL · EXECUTE-READY · PUBLIC-SAFE · ALIGNED ·
 Repo: github.com/ganihypha/Sparkmind-Sovereign-Agent-Foundry*

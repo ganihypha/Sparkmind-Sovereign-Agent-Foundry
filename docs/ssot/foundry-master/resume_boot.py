@@ -9,7 +9,7 @@ status (from README), and (optionally) live route HTTP status. Never modifies
 the repo, never calls paid APIs, never reads secrets.
 
 Doctrine: MASTER-ARCHITECT-PROMPT v8.0 (FM-01) · D-1 Truth-Lock · credit-aware
-Owner: Reza Estes / Haidar Faras — Sovereign AI Dev (Purwokerto)
+Owner: Haidar Faras Muhadidzib (alias: Reza Estes) — Sole Founder · Sovereign AI Dev (Banyumas, Jawa Tengah)
 Adapted from Barberkas-foundry to the LIVE product repo Outcome-Foundry.
 
 Usage:

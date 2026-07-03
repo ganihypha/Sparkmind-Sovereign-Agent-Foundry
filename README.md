@@ -5,7 +5,8 @@
 - **Goal**: Mother-brand landing + live Sprint tracker + Revenue ledger untuk "Indonesia's First Sovereign Agent Foundry". Memvisualisasikan Doctrine v11.0 (Triple Parallel: Doctrine v11.0 + Architect v6.0 + Sprint-Execute v1.0).
 - **Owner**: **Haidar Faras Muhadidzib** (Sole Founder — "Reza Estes" hanya alias/pen-name) — Sovereign AI Dev
 - **Badan Hukum**: **PT WASKITA CAKRAWARTI DIGITAL** — Perseroan Perorangan (UMK), terdaftar Ditjen AHU Kemenkum RI, Sertifikat No. `AHU-066746.AH.01.30.Tahun 2025` (1 Desember 2025), berkedudukan di Kabupaten Banyumas, Jawa Tengah
-- **Master SSOT**: [`docs/SPARKMIND-WEB-ID-CANONICAL-SSOT.md`](docs/SPARKMIND-WEB-ID-CANONICAL-SSOT.md) ⭐ — peresmian, legalisasi, monetisasi, pricing, strategi & legacy sparkmind.web.id
+- **Master SSOT**: [`docs/SPARKMIND-WEB-ID-CANONICAL-SSOT.md`](docs/SPARKMIND-WEB-ID-CANONICAL-SSOT.md) ⭐ **v2.0** — peresmian, legalisasi (PT ENTITY LOCK), monetisasi, pricing, strategi & legacy sparkmind.web.id
+- **Brand Alignment Lock**: [`docs/BRAND-ALIGNMENT-LOCK.md`](docs/BRAND-ALIGNMENT-LOCK.md) 🔗 — klausul supremasi + sinkronisasi 72 dokumen SSOT → 100% aligned dengan brand **sparkmind.web.id** & PT WASKITA CAKRAWARTI DIGITAL
 - **Doctrine date**: 2026-05-31 · Status: CANONICAL · EXECUTE-READY · BRUTAL-VERIFIED · HARDENED
 - **Tagline**: "Forge sovereign agents. Own your edge." / "Tempa agen sendiri. Kuasai edge lo sendiri."
 
@@ -19,6 +20,7 @@
 - ✅ **SVG favicon** served inline (no 500 on /favicon.ico).
 - ✅ **Legal Center** (`/legal`) — hub legal resmi atas nama **PT WASKITA CAKRAWARTI DIGITAL**: Pernyataan Kepemilikan (`/legal/ownership`), Syarat & Ketentuan (`/legal/terms`), Kebijakan Privasi UU PDP (`/legal/privacy`), Kebijakan Refund (`/legal/refund`), Disclaimer (`/legal/disclaimer`) + `GET /api/legal`.
 - ✅ **Footer legal entity lock** — identitas badan hukum + link legal di seluruh halaman.
+- ✅ **SSOT Library 100% CONSOLIDATED** (2026-07-03) — seluruh 72 dokumen `docs/**/*.md` memuat banner `ALIGNED · SPARKMIND.WEB.ID BRAND CANON`, owner lama ("Reza Estes / spousal 50/50") diganti kanonik **Haidar Faras Muhadidzib — Sole Founder 100%**, Master SSOT di-upgrade ke **v2.0** (badan hukum PT resmi menimpa roadmap "belum perlu PT").
 
 ## Functional Entry URIs
 | Path | Method | Description |

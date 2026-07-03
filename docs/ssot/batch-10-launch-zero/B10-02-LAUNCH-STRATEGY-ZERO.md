@@ -1,3 +1,9 @@
+> 🔗 **ALIGNED · SPARKMIND.WEB.ID BRAND CANON** — Dokumen ini tunduk pada
+> `SPARKMIND-WEB-ID-CANONICAL-SSOT.md` + `BRAND-ALIGNMENT-LOCK.md`.
+> Owner: **Haidar Faras Muhadidzib** (alias: Reza Estes) · Badan hukum:
+> **PT WASKITA CAKRAWARTI DIGITAL** (`AHU-066746.AH.01.30.Tahun 2025`) ·
+> Rumah utama: **sparkmind.web.id** 🥇 #1 Google. Jika konflik → canon menang.
+
 # B10-02 · LAUNCH-STRATEGY-ZERO — Strategi 90 Hari dari Nol
 ## SparkMind X · Outcome Foundry · SSOT Batch 10
 

@@ -1,3 +1,9 @@
+> 🔗 **ALIGNED · SPARKMIND.WEB.ID BRAND CANON** — Dokumen ini tunduk pada
+> `SPARKMIND-WEB-ID-CANONICAL-SSOT.md` + `BRAND-ALIGNMENT-LOCK.md`.
+> Owner: **Haidar Faras Muhadidzib** (alias: Reza Estes) · Badan hukum:
+> **PT WASKITA CAKRAWARTI DIGITAL** (`AHU-066746.AH.01.30.Tahun 2025`) ·
+> Rumah utama: **sparkmind.web.id** 🥇 #1 Google. Jika konflik → canon menang.
+
 # SPRINT-KAS — OF-20260701-03
 **Sprint:** CT-1..CT-4 — tutup DRIFT: implement `notFound`/`onError` + halaman `/about`, `/legal`, `/pricing` + `/sitemap.xml`, `/robots.txt` yang **diklaim done tapi belum ada di kode**
 **Doctrine:** MASTER-ARCHITECT-PROMPT v8.0 · D-1 Truth-Lock · credit-aware

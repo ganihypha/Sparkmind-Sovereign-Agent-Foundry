@@ -1,3 +1,9 @@
+> 🔗 **ALIGNED · SPARKMIND.WEB.ID BRAND CANON** — Dokumen ini tunduk pada
+> `SPARKMIND-WEB-ID-CANONICAL-SSOT.md` + `BRAND-ALIGNMENT-LOCK.md`.
+> Owner: **Haidar Faras Muhadidzib** (alias: Reza Estes) · Badan hukum:
+> **PT WASKITA CAKRAWARTI DIGITAL** (`AHU-066746.AH.01.30.Tahun 2025`) ·
+> Rumah utama: **sparkmind.web.id** 🥇 #1 Google. Jika konflik → canon menang.
+
 # SKILL AUTHORING STANDARD (R6-1)
 ## Standar Penulisan Skill — Sovereign Agent Foundry
 
@@ -55,7 +61,7 @@ metadata:                              # WAJIB
   skill_category: "<anthropic-cat>"    # WAJIB — kategori Anthropic (lihat §3)
   layer: "<L0..L6>"                    # WAJIB untuk skill peran (C-suite/squad/boot)
   version_pack: "SOVEREIGN-SKILLS-PACK-v5.0"
-  owner: "Reza Estes / Haidar Faras + Gyss (spousal 50/50)"
+  owner: "Haidar Faras Muhadidzib — Sole Founder · 100% (badan hukum: PT WASKITA CAKRAWARTI DIGITAL)"
   doctrine: "MASTER-ARCHITECT-PROMPT v8.0 OVERRIDE-LOCK"
   cloudflare-native: true|false        # WAJIB (khas SAF) — jalan di edge CF tanpa runtime luar?
   hitl-gate: payment|legal|customer-facing|secrets|outbound|none  # WAJIB (khas SAF)

@@ -1,8 +1,14 @@
+> 🔗 **ALIGNED · SPARKMIND.WEB.ID BRAND CANON** — Dokumen ini tunduk pada
+> `SPARKMIND-WEB-ID-CANONICAL-SSOT.md` + `BRAND-ALIGNMENT-LOCK.md`.
+> Owner: **Haidar Faras Muhadidzib** (alias: Reza Estes) · Badan hukum:
+> **PT WASKITA CAKRAWARTI DIGITAL** (`AHU-066746.AH.01.30.Tahun 2025`) ·
+> Rumah utama: **sparkmind.web.id** 🥇 #1 Google. Jika konflik → canon menang.
+
 # Batch 8 — ECC Reference & Upgrade (INDEX)
 ## SPARKMIND-OBP · Sovereign Agent Foundry
 
 > **Status:** Canonical · **Versi:** v1.0 · **Tanggal:** 2026-06-21
-> **Pemilik:** Reza Estes / Haidar Faras + Gyss (spousal 50/50)
+> **Pemilik:** Haidar Faras Muhadidzib — Sole Founder · 100% (badan hukum: PT WASKITA CAKRAWARTI DIGITAL)
 > **Doctrine induk:** MASTER-ARCHITECT-PROMPT v8.0 · D-1 Truth-Lock · Indonesia-first · Credit-aware
 > **Repo kanonik (produk):** https://github.com/ganihypha/Sovereign-Agent-Foundry
 > **Repo referensi (deep-dive):** https://github.com/affaan-m/ECC ("Everything Claude Code")

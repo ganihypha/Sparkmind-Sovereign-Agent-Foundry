@@ -1,7 +1,13 @@
+> 🔗 **ALIGNED · SPARKMIND.WEB.ID BRAND CANON** — Dokumen ini tunduk pada
+> `SPARKMIND-WEB-ID-CANONICAL-SSOT.md` + `BRAND-ALIGNMENT-LOCK.md`.
+> Owner: **Haidar Faras Muhadidzib** (alias: Reza Estes) · Badan hukum:
+> **PT WASKITA CAKRAWARTI DIGITAL** (`AHU-066746.AH.01.30.Tahun 2025`) ·
+> Rumah utama: **sparkmind.web.id** 🥇 #1 Google. Jika konflik → canon menang.
+
 # FOUNDRY-MASTER (Outcome-Foundry) — MANIFEST
 
 **Bundle ID**: `OUTCOME-FOUNDRY-MASTER-BUNDLE-v1.0`
-**Owner**: Reza Estes / Haidar Faras — Sovereign AI Dev (Purwokerto)
+**Owner**: Haidar Faras Muhadidzib (alias: Reza Estes) — Sole Founder · Sovereign AI Dev (Banyumas, Jawa Tengah)
 **Doctrine**: MASTER-ARCHITECT-PROMPT v8.0 OVERRIDE-LOCK · D-1 Truth-Lock
 **Status**: CANONICAL · EXECUTE-READY · PUBLIC-SAFE · v1.0 · 2026-07-01
 **Repo (LIVE)**: https://github.com/Sparkmind-obp-off/Outcome-Foundry
