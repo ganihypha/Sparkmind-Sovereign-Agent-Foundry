@@ -14,7 +14,7 @@ export const META = {
   category: "Indonesia's First Sovereign Agent Foundry",
   taglineEN: 'Forge sovereign agents. Own your edge.',
   taglineID: 'Tempa agen sendiri. Kuasai edge lo sendiri.',
-  owner: 'Reza Estes / Haidar',
+  owner: 'Haidar Faras Muhadidzib',
   doctrineDate: '2026-05-31',
   doctrineVersion: 'v11.0',
   architectVersion: 'v6.0',
@@ -223,6 +223,38 @@ export const MARKET = [
   { label: 'Indonesia Addressable', value: 'USD 245-350M' },
   { label: 'UMKM Base', value: '65 Juta UMKM' }
 ]
+
+// ──────────────────────────────────────────────────────────────
+// LEGAL ENTITY LOCK — PT WASKITA CAKRAWARTI DIGITAL
+// Sumber: Sertifikat Pendaftaran Pendirian Perseroan Perorangan
+//         Kementerian Hukum RI — Ditjen AHU
+//         Nomor: AHU-066746.AH.01.30.Tahun 2025 (1 Desember 2025)
+// Public-safe: hanya data yang tercantum pada sertifikat/akta publik.
+// ──────────────────────────────────────────────────────────────
+export const LEGAL = {
+  companyName: 'PT WASKITA CAKRAWARTI DIGITAL',
+  companyType: 'Perseroan Perorangan (untuk Usaha Mikro dan Kecil)',
+  registrationNo: 'AHU-066746.AH.01.30.Tahun 2025',
+  registrationBody: 'Kementerian Hukum Republik Indonesia — Direktorat Jenderal Administrasi Hukum Umum (Ditjen AHU)',
+  registrationDate: '1 Desember 2025',
+  domicile: 'Kabupaten Banyumas, Jawa Tengah, Indonesia',
+  ownerFullName: 'Haidar Faras Muhadidzib',
+  ownerRole: 'Pendiri Tunggal · Direktur · Pemilik Manfaat 100% (Sole Beneficial Owner)',
+  ownerAlias: 'Reza Estes (nama pena/alias kreatif — bukan entitas hukum terpisah)',
+  contactEmail: 'farasmuhadzib@gmail.com',
+  mainDomain: 'sparkmind.web.id',
+  domainRegistry: 'PANDI (.web.id — terverifikasi KTP atas nama pemilik)',
+  paymentPartner: 'Duitku (Merchant D22457) — PJP berizin Bank Indonesia',
+  lawBasis: [
+    'UU No. 40 Tahun 2007 tentang Perseroan Terbatas jo. UU No. 6 Tahun 2023 (Cipta Kerja) — dasar Perseroan Perorangan',
+    'UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (UU PDP)',
+    'UU No. 11 Tahun 2008 jo. UU No. 19 Tahun 2016 tentang Informasi dan Transaksi Elektronik (UU ITE)',
+    'PP No. 71 Tahun 2019 tentang Penyelenggaraan Sistem dan Transaksi Elektronik (PSTE)',
+    'Permenkominfo No. 5 Tahun 2020 tentang PSE Lingkup Privat'
+  ],
+  effectiveDate: '1 Desember 2025',
+  lastUpdated: '3 Juli 2026'
+}
 
 // Helper: current sprint day index relative to today (clamped 0..14)
 export function currentSprintDay(now = new Date()): number {

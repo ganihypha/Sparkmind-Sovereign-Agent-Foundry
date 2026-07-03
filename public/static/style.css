@@ -226,3 +226,26 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px)
   .pillar-table .row { grid-template-columns: 1fr; gap: 2px; }
   #topnav nav a { font-size: .82rem; }
 }
+
+/* ── Legal pages ─────────────────────────────────────── */
+.foot-grid { grid-template-columns: 2fr 1fr 1fr 1fr; }
+.legal-entity-line { margin-top: 12px; line-height: 1.5; }
+.legal-entity-line i { color: var(--gold); margin-right: 4px; }
+.legal-page .card { margin-bottom: 18px; }
+.legal-page .card h2 { font-size: 1.1rem; margin-bottom: 10px; }
+.legal-page .card h2 i { color: var(--gold); margin-right: 8px; }
+.legal-page .card p { font-size: .92rem; margin-bottom: 10px; }
+.legal-page .card p:last-child { margin-bottom: 0; }
+.legal-page a { color: var(--gold); text-decoration: underline; text-underline-offset: 3px; }
+.legal-page #topnav a, .legal-page #site-footer a, .legal-page .legal-card { text-decoration: none; }
+.highlight-card { border-color: rgba(212,175,55,.45); background: linear-gradient(180deg, rgba(212,175,55,.06), transparent); }
+.legal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.legal-card { display: block; background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 22px; transition: .2s; color: var(--text) !important; }
+.legal-card:hover { border-color: var(--gold); transform: translateY(-3px); }
+.legal-card i { font-size: 1.5rem; color: var(--gold); margin-bottom: 12px; display: block; }
+.legal-card h3 { font-size: 1.02rem; margin-bottom: 6px; }
+.legal-card p { font-size: .84rem; color: var(--muted); }
+.legal-table td:first-child { color: var(--muted); white-space: nowrap; width: 200px; }
+.legal-entity-card { border-color: rgba(212,175,55,.35); }
+@media (max-width: 900px) { .foot-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 720px) { .foot-grid { grid-template-columns: 1fr; } .legal-table td:first-child { width: auto; white-space: normal; } }

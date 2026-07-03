@@ -2,9 +2,11 @@ import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { serveStatic } from 'hono/cloudflare-workers'
 import { Layout } from './renderer'
+import { Nav, Footer, statusBadge } from './components'
+import legal from './legal'
 import {
   META, PILLARS, BRANDS, SPRINT, REVENUE, D90_MIX, TARGETS,
-  DECISIONS, GAPS, GAP_STATS, MARKET, currentSprintDay, rupiah, type Brand
+  DECISIONS, GAPS, GAP_STATS, MARKET, LEGAL, currentSprintDay, rupiah
 } from './data'
 
 const app = new Hono()
@@ -44,62 +46,21 @@ app.get('/api/sprint', (c) => c.json({ today: currentSprintDay(), days: SPRINT }
 app.get('/api/revenue', (c) => c.json({ targetIdr: META.revenueD30Target, channels: REVENUE, mix: D90_MIX, targets: TARGETS }))
 
 // ════════════════════════════════════════════════════════════════
-// Reusable view fragments
+// LEGAL routes — PT WASKITA CAKRAWARTI DIGITAL (see src/legal.tsx)
 // ════════════════════════════════════════════════════════════════
-const statusBadge = (s: Brand['status']) => {
-  const map: Record<Brand['status'], { cls: string; label: string }> = {
-    'DNS-FIX': { cls: 'b-red', label: 'DNS P0 FIX' },
-    'LIVE': { cls: 'b-green', label: 'LIVE' },
-    'PARTIAL': { cls: 'b-amber', label: 'PARTIAL' },
-    'REVIVING': { cls: 'b-blue', label: 'REVIVING' },
-    'NEW': { cls: 'b-red', label: 'NEW' }
-  }
-  const m = map[s]
-  return <span class={`badge ${m.cls}`}>{m.label}</span>
-}
+app.route('/legal', legal)
 
-const Nav = (props: { active: string }) => (
-  <header id="topnav">
-    <a href="/" class="brand-mark">
-      <i class="fas fa-industry"></i>
-      <span>SparkMind <b>Sovereign</b></span>
-    </a>
-    <nav aria-label="Primary">
-      <a href="/" class={props.active === 'home' ? 'active' : ''}>Foundry</a>
-      <a href="/doctrine" class={props.active === 'doctrine' ? 'active' : ''}>Doctrine</a>
-      <a href="/sprint" class={props.active === 'sprint' ? 'active' : ''}>Sprint</a>
-      <a href="/revenue" class={props.active === 'revenue' ? 'active' : ''}>Revenue</a>
-    </nav>
-  </header>
-)
-
-const Footer = () => (
-  <footer id="site-footer">
-    <div class="foot-grid">
-      <div>
-        <div class="brand-mark"><i class="fas fa-industry"></i><span>SparkMind <b>Sovereign</b></span></div>
-        <p class="muted">{META.category}</p>
-        <p class="muted small">"{META.taglineEN}" / "{META.taglineID}"</p>
-      </div>
-      <div>
-        <h4>Foundry</h4>
-        <a href="/doctrine">Doctrine {META.doctrineVersion}</a>
-        <a href="/sprint">Sprint Tracker</a>
-        <a href="/revenue">Revenue Ledger</a>
-      </div>
-      <div>
-        <h4>Lock Metadata</h4>
-        <p class="muted small">Owner: {META.owner}</p>
-        <p class="muted small">Doctrine: {META.doctrineDate}</p>
-        <p class="muted small">Stack: 100% Cloudflare · Hono</p>
-      </div>
-    </div>
-    <div class="foot-bar">
-      <span>🔒 {META.status}</span>
-      <span>© 2026 SparkMind Ecosystem · Public-safe</span>
-    </div>
-  </footer>
-)
+app.get('/api/legal', (c) => c.json({
+  entity: LEGAL.companyName,
+  type: LEGAL.companyType,
+  registration: LEGAL.registrationNo,
+  registeredAt: LEGAL.registrationBody,
+  registrationDate: LEGAL.registrationDate,
+  domicile: LEGAL.domicile,
+  owner: LEGAL.ownerFullName,
+  mainDomain: LEGAL.mainDomain,
+  pages: ['/legal', '/legal/ownership', '/legal/terms', '/legal/privacy', '/legal/refund', '/legal/disclaimer']
+}))
 
 // ════════════════════════════════════════════════════════════════
 // HOME — Mother Brand Landing (DoD 2: Doctrine v11.0 published)

@@ -4,6 +4,7 @@
 - **Name**: SparkMind Sovereign Agent Foundry
 - **Goal**: Mother-brand landing + live Sprint tracker + Revenue ledger untuk "Indonesia's First Sovereign Agent Foundry". Memvisualisasikan Doctrine v11.0 (Triple Parallel: Doctrine v11.0 + Architect v6.0 + Sprint-Execute v1.0).
 - **Owner**: **Haidar Faras Muhadidzib** (Sole Founder — "Reza Estes" hanya alias/pen-name) — Sovereign AI Dev
+- **Badan Hukum**: **PT WASKITA CAKRAWARTI DIGITAL** — Perseroan Perorangan (UMK), terdaftar Ditjen AHU Kemenkum RI, Sertifikat No. `AHU-066746.AH.01.30.Tahun 2025` (1 Desember 2025), berkedudukan di Kabupaten Banyumas, Jawa Tengah
 - **Master SSOT**: [`docs/SPARKMIND-WEB-ID-CANONICAL-SSOT.md`](docs/SPARKMIND-WEB-ID-CANONICAL-SSOT.md) ⭐ — peresmian, legalisasi, monetisasi, pricing, strategi & legacy sparkmind.web.id
 - **Doctrine date**: 2026-05-31 · Status: CANONICAL · EXECUTE-READY · BRUTAL-VERIFIED · HARDENED
 - **Tagline**: "Forge sovereign agents. Own your edge." / "Tempa agen sendiri. Kuasai edge lo sendiri."
@@ -16,6 +17,8 @@
 - ✅ **JSON API** — public-safe state endpoints (no PII / secrets).
 - ✅ **Dark Sovereign theme** (gold/green/amber/red), responsive, FontAwesome icons.
 - ✅ **SVG favicon** served inline (no 500 on /favicon.ico).
+- ✅ **Legal Center** (`/legal`) — hub legal resmi atas nama **PT WASKITA CAKRAWARTI DIGITAL**: Pernyataan Kepemilikan (`/legal/ownership`), Syarat & Ketentuan (`/legal/terms`), Kebijakan Privasi UU PDP (`/legal/privacy`), Kebijakan Refund (`/legal/refund`), Disclaimer (`/legal/disclaimer`) + `GET /api/legal`.
+- ✅ **Footer legal entity lock** — identitas badan hukum + link legal di seluruh halaman.
 
 ## Functional Entry URIs
 | Path | Method | Description |
@@ -24,6 +27,13 @@
 | `/doctrine` | GET | Master Consolidated Doctrine Lock v11.0 viewer |
 | `/sprint` | GET | Sprint D0–D14 execution tracker |
 | `/revenue` | GET | Revenue ledger (Rp 1M D30 path) |
+| `/legal` | GET | Legal Hub — PT WASKITA CAKRAWARTI DIGITAL |
+| `/legal/ownership` | GET | Pernyataan Kepemilikan Resmi |
+| `/legal/terms` | GET | Syarat & Ketentuan |
+| `/legal/privacy` | GET | Kebijakan Privasi (UU PDP 27/2022) |
+| `/legal/refund` | GET | Kebijakan Refund |
+| `/legal/disclaimer` | GET | Disclaimer |
+| `/api/legal` | GET | Identitas badan hukum (JSON, public-safe) |
 | `/favicon.svg` / `/favicon.ico` | GET | Inline SVG brand favicon |
 | `/api/health` | GET | `{ ok, doctrine, ts }` |
 | `/api/state` | GET | Full public-safe state (meta, sprint, revenue, brands, decisions, gaps, market) |
